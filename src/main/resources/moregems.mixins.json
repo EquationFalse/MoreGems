@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "com.equation.moregems.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"MoreGemsMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
