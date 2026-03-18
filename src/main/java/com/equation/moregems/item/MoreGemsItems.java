@@ -20,7 +20,7 @@ public class MoreGemsItems {
 
     //静态加载此类
     public static void initialize(){
-        //打印日志，可有可无
+        //打印日志
         MoreGemsMod.LOGGER.info("Registering Items");
     }
 }

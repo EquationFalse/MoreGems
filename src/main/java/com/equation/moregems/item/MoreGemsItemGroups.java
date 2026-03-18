@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class MoreGemsItemGroups {
 
-    public static final ItemGroup TEST_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(MoreGemsMod.MOD_ID, "example_group"), FabricItemGroup.builder()
+    public static final ItemGroup MOREGEMS_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(MoreGemsMod.MOD_ID, "moregems_group"), FabricItemGroup.builder()
             .icon(() -> new ItemStack(MoreGemsItems.RUBY))
             .displayName(Text.translatable("itemGroup.moregems.example_group"))
             .entries((context, entries) -> {
@@ -25,7 +25,7 @@ public class MoreGemsItemGroups {
 
     //静态加载此类
     public static void initialize(){
-        //打印日志，可有可无
+        //打印日志
         MoreGemsMod.LOGGER.info("Registering Item Groups");
     }
 }
