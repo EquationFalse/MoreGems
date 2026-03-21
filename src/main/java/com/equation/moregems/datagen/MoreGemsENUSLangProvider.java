@@ -18,7 +18,7 @@ public class MoreGemsENUSLangProvider extends FabricLanguageProvider {
     public void generateTranslations(RegistryWrapper.WrapperLookup wrapperLookup, TranslationBuilder translationBuilder) {
         translationBuilder.add(MoreGemsItems.RUBY, "Ruby");
 
-        translationBuilder.add(MoreGemsBlocks.RUBY_BLOCK, "Ruby Block");
+        translationBuilder.add(MoreGemsBlocks.RUBY_BLOCK, "Block of Ruby");
         translationBuilder.add(MoreGemsBlocks.RUBY_ORE, "Ruby Ore");
         translationBuilder.add(MoreGemsBlocks.DEEPSLATE_RUBY_ORE, "Deepslate Ruby Ore");
 
