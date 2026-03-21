@@ -23,5 +23,6 @@ public class MoreGemsModelsProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(MoreGemsItems.RUBY, Models.GENERATED);
+        itemModelGenerator.register(MoreGemsItems.RUBY_COOKIE, Models.GENERATED);
     }
 }

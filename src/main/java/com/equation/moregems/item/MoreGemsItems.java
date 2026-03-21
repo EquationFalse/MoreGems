@@ -11,6 +11,7 @@ import java.util.function.Function;
 
 public class MoreGemsItems {
     public static final Item RUBY = register("ruby", Item::new, new Item.Settings());
+    public static final Item RUBY_COOKIE = register("ruby_cookie", Item::new, new Item.Settings().food(MoreGemsFoodComponents.RUBY_COOKIE, MoreGemsConsumableComponents.RUBY_COOKIE));
 
     //Item注册器
     public static Item register(String id, Function<Item.Settings, Item> factory, Item.Settings settings) {

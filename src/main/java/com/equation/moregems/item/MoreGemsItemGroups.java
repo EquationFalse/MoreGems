@@ -17,6 +17,7 @@ public class MoreGemsItemGroups {
             .displayName(Text.translatable("itemGroup.moregems.example_group"))
             .entries((context, entries) -> {
                 entries.add(MoreGemsItems.RUBY);
+                entries.add(MoreGemsItems.RUBY_COOKIE);
                 entries.add(MoreGemsBlocks.RUBY_BLOCK);
                 entries.add(MoreGemsBlocks.RUBY_ORE);
                 entries.add(MoreGemsBlocks.DEEPSLATE_RUBY_ORE);

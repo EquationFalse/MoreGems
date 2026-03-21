@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.recipe.RecipeExporter;
 import net.minecraft.data.recipe.RecipeGenerator;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 
@@ -27,6 +28,16 @@ public class MoreGemsRecipeProvider extends FabricRecipeProvider {
             public void generate() {
                 //红宝石块的可逆合成
                 offerReversibleCompactingRecipes(RecipeCategory.MISC, MoreGemsItems.RUBY, RecipeCategory.BUILDING_BLOCKS, MoreGemsBlocks.RUBY_BLOCK);
+
+                //红宝石曲奇的有序合成
+                createShaped(RecipeCategory.FOOD, MoreGemsItems.RUBY_COOKIE, 8)
+                        .input('C', Items.COOKIE)
+                        .input('R', MoreGemsItems.RUBY)
+                        .pattern("CCC")
+                        .pattern("CRC")
+                        .pattern("CCC")
+                        .criterion("has_ruby", conditionsFromItem(MoreGemsItems.RUBY))
+                        .offerTo(exporter);
 
                 //熔炉配方
                 offerSmelting(RUBY_ORES, RecipeCategory.MISC, MoreGemsItems.RUBY,

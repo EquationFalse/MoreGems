@@ -16,6 +16,7 @@ public class MoreGemsZHCNLangProvider extends FabricLanguageProvider {
     @Override
     public void generateTranslations(RegistryWrapper.WrapperLookup wrapperLookup, TranslationBuilder translationBuilder) {
         translationBuilder.add(MoreGemsItems.RUBY, "红宝石");
+        translationBuilder.add(MoreGemsItems.RUBY_COOKIE, "红宝石曲奇");
 
         translationBuilder.add(MoreGemsBlocks.RUBY_BLOCK, "红宝石块");
         translationBuilder.add(MoreGemsBlocks.RUBY_ORE, "红宝石矿石");
